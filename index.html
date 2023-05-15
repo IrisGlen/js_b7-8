@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BTVN B7-8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <!-- bai 1 -->
+      <div class="container">
+        <h2>Nhập số nguyên để thêm vào mảng</h2>
+        <div class="mb-3">
+          <label for="soNguyen" class="form-label"
+            >Nhập số nguyên</label
+          >
+          <input type="text" class="form-control" id="soNguyen" />
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-danger" onclick="themVaoMang()">
+            Thêm số
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-danger text-white hienThiMang py-2 px-2"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h4>Tính tổng số dương</h4>
+        <div class="mb-3">
+          <button class="btn btn-dark" onclick="tinhTong()">
+            Tính tổng
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-black text-white tinhTong py-2 px-2"></div>
+        </div>
+      </div>
+      <div class="container">
+        <h4>Đếm số dương</h4>
+        <div class="mb-3">
+          <button class="btn btn-light text-primary" onclick="demSoDuong()">
+            Đếm số dương
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-light text-primary demSoDuong py-2 px-2"></div>
+        </div>
+      </div>
+      <div class="container">
+        <h4>Tính số nhỏ nhất</h4>
+        <div class="mb-3">
+          <button class="btn btn-success" onclick="timSoNhoNhat()">
+            Tìm số nhỏ nhất
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-success text-white timSoMin py-2 px-2"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
