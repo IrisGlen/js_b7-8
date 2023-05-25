@@ -25,11 +25,9 @@
     <main>
       <!-- bai 1 -->
       <div class="container">
-        <h2>Nhập số nguyên để thêm vào mảng</h2>
+        <h2>INPUT: Nhập số nguyên để thêm vào mảng</h2>
         <div class="mb-3">
-          <label for="soNguyen" class="form-label"
-            >Nhập số nguyên</label
-          >
+          <label for="soNguyen" class="form-label">Nhập số nguyên</label>
           <input type="text" class="form-control" id="soNguyen" />
         </div>
         <div class="mb-3">
@@ -43,20 +41,21 @@
       </div>
 
       <div class="container">
-        <h4>Tính tổng số dương</h4>
+        <h4>B1-Tính tổng số dương</h4>
         <div class="mb-3">
-          <button class="btn btn-dark" onclick="tinhTong()">
-            Tính tổng
-          </button>
+          <button class="btn btn-dark" onclick="tinhTong()">Tính tổng</button>
         </div>
         <div class="mb-3">
           <div class="bg-black text-white tinhTong py-2 px-2"></div>
         </div>
       </div>
       <div class="container">
-        <h4>Đếm số dương</h4>
+        <h4>B2-Đếm số dương</h4>
         <div class="mb-3">
-          <button class="btn btn-light text-primary" onclick="demSoDuong()">
+          <button
+            class="btn btn-light text-primary border"
+            onclick="demSoDuong()"
+          >
             Đếm số dương
           </button>
         </div>
@@ -65,7 +64,7 @@
         </div>
       </div>
       <div class="container">
-        <h4>Tính số nhỏ nhất</h4>
+        <h4>B3-Tính số nhỏ nhất</h4>
         <div class="mb-3">
           <button class="btn btn-success" onclick="timSoNhoNhat()">
             Tìm số nhỏ nhất
@@ -75,6 +74,109 @@
           <div class="bg-success text-white timSoMin py-2 px-2"></div>
         </div>
       </div>
+      <div class="container">
+        <h4>B4-Tính số dương nhỏ nhất</h4>
+        <div class="mb-3">
+          <button class="btn btn-success" onclick="timSoDuongNhoNhat()">
+            Tìm số dương nhỏ nhất
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-success text-white timSoDuongMin py-2 px-2"></div>
+        </div>
+      </div>
+      <div class="container">
+        <h4>B5- Tìm số chẵn cuối cùng trong mảng</h4>
+        <div class="mb-3">
+          <button class="btn btn-danger" onclick="timSoChan()">
+            Tìm số chẵn cuối cùng
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-danger text-white timSoChan py-2 px-2"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h4>B6- Đổi chỗ 2 vị trí</h4>
+        <div class="mb-3">
+          <label for="viTri1" class="form-label">Nhập số vị trí 1</label>
+          <input type="text" class="form-control" id="viTri1" />
+        </div>
+        <div class="mb-3">
+          <label for="viTri2" class="form-label">Nhập số vị trí 2</label>
+          <input type="text" class="form-control" id="viTri2" />
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-success" onclick="doiChoViTri()">
+            Đổi chỗ 2 vị trí
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-success text-white doiViTri py-2 px-2"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h4>B7- Sắp xếp tăng dần</h4>
+        <div class="mb-3">
+          <button class="btn btn-danger" onclick="sapXepTangDan()">
+            Sắp xếp tăng dần
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-danger text-white sapXep py-2 px-2"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h4>B8- Kiểm tra Số nguyên tố</h4>
+        <div class="mb-3">
+          <button class="btn btn-danger" onclick="timSoNguyenTo()">
+            Tìm số nguyên tố
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-danger text-white soNgTo py-2 px-2"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <h3>INPUT: Nhập mảng số thực</h3>
+        <div class="mb-3">
+          <label for="soThuc" class="form-label">Nhập số thực</label>
+          <input type="text" class="form-control" id="soThuc" />
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-danger" onclick="themVaoMangSoThuc()">
+            Thêm số thực
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-danger text-white hienThiMangSoThuc py-2 px-2"></div>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-success" onclick="demSoNguyen()">
+            Đếm số nguyên
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-success text-white demSoNguyen py-2 px-2"></div>
+        </div>
+      </div>
+      <div class="container">
+        <h4>B10- So sánh số âm số dương</h4>
+        <div class="mb-3">
+          <button class="btn btn-danger" onclick="soSanhSoAmDuong()">
+            So Sánh
+          </button>
+        </div>
+        <div class="mb-3">
+          <div class="bg-danger text-white soSanh py-2 px-2"></div>
+        </div>
+      </div>
+
+      <div class="mb-5"></div>
     </main>
     <footer>
       <!-- place footer here -->
